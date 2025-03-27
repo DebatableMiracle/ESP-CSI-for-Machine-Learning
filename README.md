@@ -105,7 +105,21 @@ But you're probably not just going to copy paste your data from terminal right?
 
  Now you can label them as you want, use an RTC to add labels through other sensors and concatenate. (coming soon too!)
 
+ ### Training models on CSI data
 
+ Now you train models on this data, the fun part right?
+ You can take reference from some of my notebooks here. and some of the code I used intially to get how I trained models, for the pipeline.
+
+ You should run models on parsed data, however I've noticed Deep Learning models like LSTM and CNN perform satisfactorily well on raw data too, which is useful if you want minimum preprocessing time. (still I recommend preprocessing and feature extraction to get actual good results)
+
+ ### Running the models on live datastream using Machine Learning pipeline
+
+ So you've saved your model and now wanna test it in real life?
+
+    #prediction pipeline with visualization and a pyqt interface
+    python csi_pipeline_visual.py -p /dev/ttyUSB1 -m lstm_model.h5
+
+and you get a real time prediction of your CSI model working.
 ## Getting CSI Data
 
 ### Router-Based CSI

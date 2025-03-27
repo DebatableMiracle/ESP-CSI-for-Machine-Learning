@@ -67,18 +67,18 @@ Use [esp-csi](https://github.com/espressif/esp-csi) or my own repository's compo
 
 Connect two Esp32's to your PC, upload esp_recv and esp_send to the respective ESP32s using the following codes.
 
-    
     # csi_send
     cd /examples/get-started/csi_send
     idf.py set-target esp32
     idf.py flash -b 921600 -p /dev/ttyUSB0 monitor
     
+and to the other esp32
 
-    '''
+    #csi_recv
     cd /examples/get-started/csi_recv
     idf.py set-target esp32
     idf.py flash -b 921600 -p /dev/ttyUSB1
-    '''
+
 
 Change set-target depending upon your ESP32 chip, if wrong one is selected, you'll see some errors. You can raise issues if you need help.
 -b sets the baud rate of the device, make sure the baud rates match your whole setup (I use 921600 but increased baud rates may show some better results too)
@@ -86,27 +86,22 @@ Change set-target depending upon your ESP32 chip, if wrong one is selected, you'
 
 Yayy you're seeing the data in terminal probably!
 
-    '''shell
     #to check your data in terminal
     idf.py -b 921600 -p /dev/ttyUSB1 monitor
-    '''
 
 **Visualize the data**
 
-    '''shell
     cd /examples/get-started/tools
     # Install python related dependencies
     pip install -r requirements.txt
     # Graphical display
     python csi_data_read_parse.py -p /dev/ttyUSB1
-    '''
 
 **Saving the data**
 
 But you're probably not just going to copy paste your data from terminal right?
-    '''shell
+
     idf.py -b 921600 -p /dev/ttyUSB1 monitor | grep "CSI_DATA" > my-experiment-file.csv
-    '''
 
  Now you can label them as you want, use an RTC to add labels through other sensors and concatenate. (coming soon too!)
 

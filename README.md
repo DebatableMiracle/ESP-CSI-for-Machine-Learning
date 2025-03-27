@@ -51,9 +51,10 @@ CSI-based applications, including cloud reporting and activity detection.
 - [connect_rainmaker](./examples/esp-radar/connect_rainmaker) – Upload CSI data to Espressif’s RainMaker cloud.
 - [console_test](./examples/esp-radar/console_test) – Interactive console for real-time CSI data analysis.
 
-### [ml-pipeline](./examples/ml-pipeline)
+### [machine-learning](./machine_learning)
 
-Real-time machine learning pipeline for CSI-based applications.
+Real-time machine learning pipeline for visualising and predictions of CSI-based applications.
+(I'm working on heart rate prediction using CSI so some resources are made for those)
 
 - **Feature Extraction:** Scripts for preprocessing CSI data.
 - **Real-time Model Execution:** Runs machine learning models on incoming CSI data.

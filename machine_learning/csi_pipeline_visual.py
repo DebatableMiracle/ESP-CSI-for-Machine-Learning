@@ -153,7 +153,7 @@ class csi_data_graphical_window(QWidget):
         self.setup_ui()
         
     def setup_ui(self):
-        self.resize(1280, 720)
+        self.resize(1440, 900)
         layout = QVBoxLayout(self)
         
         # Create prediction display

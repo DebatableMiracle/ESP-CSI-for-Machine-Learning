@@ -67,14 +67,14 @@ Use [esp-csi](https://github.com/espressif/esp-csi) or my own repository's compo
 
 Connect two Esp32's to your PC, upload esp_recv and esp_send to the respective ESP32s using the following codes.
 
-    '''shell 
+    
     # csi_send
     cd /examples/get-started/csi_send
     idf.py set-target esp32
     idf.py flash -b 921600 -p /dev/ttyUSB0 monitor
-    '''
+    
 
-    '''shell
+    '''
     cd /examples/get-started/csi_recv
     idf.py set-target esp32
     idf.py flash -b 921600 -p /dev/ttyUSB1

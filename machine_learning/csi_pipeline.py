@@ -7,8 +7,7 @@ from tensorflow.keras.layers import LSTM, Dense, Dropout
 from tensorflow.keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report#!/usr/bin/env python3
-# -*-coding:utf-8-*-
+from sklearn.metrics import classification_report
 
 import sys
 import json

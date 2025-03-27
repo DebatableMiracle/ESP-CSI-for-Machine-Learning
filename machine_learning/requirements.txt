@@ -1,0 +1,7 @@
+
+pandas
+numpy
+pyserial
+pyqt5
+pyqtgraph
+tensorflow

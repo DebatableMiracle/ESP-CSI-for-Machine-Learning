@@ -116,7 +116,10 @@ But you're probably not just going to copy paste your data from terminal right?
 
  So you've saved your model and now wanna test it in real life?
 
-    #prediction pipeline with visualization and a pyqt interface
+prediction pipeline with visualization and a pyqt interface
+
+    #run this!
+    cd machine_learning/
     python csi_pipeline_visual.py -p /dev/ttyUSB1 -m lstm_model.h5
 
 and you get a real time prediction of your CSI model working.
